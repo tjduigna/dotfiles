@@ -15,12 +15,12 @@ Plug 'neovim/nvim-lspconfig'                           " language server pls
 Plug 'ms-jpq/coq_nvim', { 'branch': 'coq' }            " faf completion
 Plug 'ms-jpq/coq.artifacts', { 'branch': 'artifacts' } " snippets
 Plug 'numToStr/Comment.nvim'                           " multi-line comments with gc
-Plug 'tpope/vim-fugitive'
-Plug 'jpalardy/vim-slime', { 'for': 'python' }
-Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
-Plug 'hashivim/vim-terraform'
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-fugitive'                              " git commands directly in vim
+Plug 'jpalardy/vim-slime', { 'for': 'python' }         " allow shipping commands
+Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }  " ship commands to ipython
+Plug 'hashivim/vim-terraform'                          " terraform syntax highlighting
+Plug 'ekalinin/Dockerfile.vim'                         " dockerfile syntax highlighting
+Plug 'christoomey/vim-tmux-navigator'                  " unify vim + tmux navigation
 call plug#end()
 
 if (empty($TMUX))
