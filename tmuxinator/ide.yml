@@ -46,15 +46,12 @@ root: ~/<%= @args[0] %>
 
 windows:
   - editor:
-      layout: main-vertical
-      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-      # synchronize: after
+      layout: 1d6c,211x54,0,0{165x54,0,0[165x44,0,0,42,165x9,0,45,46],45x54,166,0,45}
       panes:
         - - conda activate <%= @settings["conda-env"] %>
-          - tmux split-window -d ; M=0; while [ "$M" -lt 9 ]; do (( M+=1 )); tmux resize-pane -D; done
           - vim .
         - - conda activate <%= @settings["conda-env"] %>
           - ipython
+        - - conda activate <%= @settings["conda-env"] %>
   - server: bundle exec rails s
   - logs: tail -f log/development.log
