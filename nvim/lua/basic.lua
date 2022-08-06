@@ -43,3 +43,5 @@ vim.opt.backspace = 'eol,start,indent'
 vim.opt.whichwrap = 'b,s,<,>,h,l'
 -- hidden buffer TODO
 vim.opt.hidden = true
+-- for nvim-tree left anchor
+vim.opt.splitright = true

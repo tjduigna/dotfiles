@@ -24,7 +24,6 @@ let mapleader = " "
 
 ### To Do
 
-- Anchor tree toggle to always be on the left
 - Make `vim` and `tmux` navigation more consistent
 - Make directory traversal more consistent
 - Remove unused plugins
